@@ -1,0 +1,20 @@
+{
+  "name": "archaeologixal-survey-location-collector-relay",
+  "version": "0.3.0",
+  "description": "A relay server for an Emlid Reach.",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+  },
+  "dependencies": {
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "license": "MIT"
+}
