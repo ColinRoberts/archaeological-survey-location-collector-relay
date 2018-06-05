@@ -1,5 +1,7 @@
-var http = require('http')
-var server = http.createServer(function (req, res) {
-  req.pipe(res);
+var net = require('net');
+
+var server = net.createServer(function(socket) {
+	socket.pipe(socket);
 });
-server.listen(8000);
+
+server.listen(9001, '127.0.0.1');
