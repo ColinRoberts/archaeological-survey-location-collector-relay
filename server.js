@@ -1,5 +1,5 @@
-var net = require('net');
-var HOST = '127.0.0.1';
+var net = require("net");
+var HOST = "0.0.0.0";
 var PORT = 9001;
 
 var clients = [];
@@ -15,7 +15,7 @@ var server = net.createServer(function(socket) {
 	});
 	
 	// Remove clients when they leave
-	socket.on('end', function () {
+	socket.on("end", function () {
 		clients.splice(clients.indexOf(socket), 1);
 	});
 	
