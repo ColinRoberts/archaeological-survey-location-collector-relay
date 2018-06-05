@@ -1,20 +1,31 @@
 {
-  "name": "archaeologixal-survey-location-collector-relay",
-  "version": "0.3.0",
-  "description": "A relay server for an Emlid Reach.",
-  "engines": {
-    "node": "8.9.1"
-  },
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-  },
-  "dependencies": {
-   
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "license": "MIT"
+	"name": "archaeologixal-survey-location-collector-relay",
+	"version": "0.3.0",
+	"description": "A relay server for an Emlid Reach.",
+	"engines": {
+		"node": "8.9.1"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "node test.js"
+	},
+	"dependencies": {
+		"ejs": "^2.5.6",
+		"express": "^4.15.2"
+	},
+	"devDependencies": {
+		"request": "^2.81.0",
+		"tape": "^4.7.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/heroku/node-js-getting-started"
+	},
+	"keywords": [
+		"node",
+		"heroku",
+		"express"
+	],
+	"license": "MIT"
 }
